@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NovaBot — AI Chat Assistant</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="app">
+
+    <!-- Header -->
+    <header class="app-header">
+      <div class="brand">
+        <span class="brand-dot"></span>
+        <h1>NovaBot</h1>
+      </div>
+      <p class="brand-tag">A rule-based AI assistant built with HTML, CSS &amp; JavaScript</p>
+    </header>
+
+    <!-- Chat window -->
+    <main class="chat-window" id="chat-window" aria-live="polite">
+      <!-- messages get injected here by script.js -->
+    </main>
+
+    <!-- Quick suggestion chips -->
+    <div class="suggestions" id="suggestions">
+      <button class="chip" data-msg="What can you do?">What can you do?</button>
+      <button class="chip" data-msg="Tell me a joke">Tell me a joke</button>
+      <button class="chip" data-msg="What's the time?">What's the time?</button>
+      <button class="chip" data-msg="Who made you?">Who made you?</button>
+    </div>
+
+    <!-- Input bar -->
+    <form class="input-bar" id="input-form">
+      <input
+        type="text"
+        id="user-input"
+        placeholder="Type a message..."
+        autocomplete="off"
+        aria-label="Type a message to NovaBot"
+      >
+      <button type="submit" class="send-btn" aria-label="Send message">➤</button>
+    </form>
+
+    <footer class="app-footer">
+      <p>Runs 100% in your browser — no API key, no server, no data leaves your device.</p>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
